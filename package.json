@@ -1,0 +1,41 @@
+{
+  "name": "myweb_backend",
+  "version": "1.0.0",
+  "description": "website dien tu gia dung",
+  "main": "server.js",
+  "scripts": {
+    "build": "node esbuild.config.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon --exec babel-node src/server.js",
+    "start": "node src/server.js"
+  },
+  "keywords": [
+    "backend"
+  ],
+  "author": "Duc Viet",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "bcryptjs": "^2.4.3",
+    "bluebird": "^3.7.2",
+    "body-parser": "^1.19.0",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "lodash": "^4.17.21",
+    "mysql2": "^2.2.5",
+    "pg": "8.7.1",
+    "pg-hstore": "2.3.4",
+    "sequelize": "^6.6.2",
+    "sequelize-cli": "^6.2.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/node": "^7.12.10",
+    "@babel/preset-env": "^7.12.10",
+    "nodemon": "^2.0.7"
+  }
+}
